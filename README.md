@@ -1,5 +1,7 @@
 # Chanty MCP Server
 
+<!-- mcp-name: io.github.asklokesh/chanty-mcp-server -->
+
 <div align="center">
 
 # Chanty Mcp Server
