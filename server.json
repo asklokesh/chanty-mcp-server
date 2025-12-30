@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.asklokesh/chanty-mcp-server",
+  "description": "MCP server for Chanty API integration",
+  "title": "Chanty",
+  "repository": {
+    "url": "https://github.com/asklokesh/chanty-mcp-server",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "chanty-mcp-server",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CHANTY_API_KEY",
+          "description": "API Key for CHANTY",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "CHANTY_API_URL",
+          "description": "API URL for CHANTY",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}
